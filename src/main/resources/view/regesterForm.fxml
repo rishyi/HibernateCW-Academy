@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="705.0" prefWidth="1132.0" style="-fx-background-color: #17202a;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.RegesterFormController">
+   <children>
+      <Label layoutX="846.0" layoutY="101.0" text="Register Here" textFill="#d1eaf0">
+         <font>
+            <Font name="Microsoft YaHei UI" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="695.0" layoutY="193.0" text="User Id" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="962.0" layoutY="193.0" text="Password" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserId" layoutX="693.0" layoutY="221.0" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #f8f9f9;" />
+      <TextField fx:id="txtPassword" layoutX="962.0" layoutY="221.0" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #f8f9f9;" />
+      <JFXButton buttonType="RAISED" layoutX="874.0" layoutY="498.0" onAction="#btnRegesterOnAction" prefHeight="39.0" prefWidth="135.0" style="-fx-background-color: brown;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Line endX="304.0" layoutX="903.0" layoutY="444.0" startX="-217.5" stroke="WHITE" />
+      <Label layoutX="701.0" layoutY="48.0" text="The Culinary Acedemy" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="729.0" fitWidth="566.0" layoutX="-48.0" layoutY="-1.0">
+         <image>
+            <Image url="@../icons/chef-5128018_1920.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="910.0" layoutY="560.0">
+         <image>
+            <Image url="@../icons/icons8-google-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="949.0" layoutY="560.0">
+         <image>
+            <Image url="@../icons/icons8-apple-50.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtUserName" layoutX="693.0" layoutY="329.0" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #f8f9f9;" />
+      <Label layoutX="693.0" layoutY="302.0" text="User Name" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserRole1" layoutX="965.0" layoutY="329.0" prefHeight="39.0" prefWidth="231.0" style="-fx-background-color: #f8f9f9;" />
+      <Label layoutX="968.0" layoutY="302.0" text="User Role" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

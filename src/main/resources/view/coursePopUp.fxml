@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="448.0" prefWidth="640.0" style="-fx-border-color: #17202a; -fx-background-color: #e5e7e9; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CoursePopupController">
+   <children>
+      <Label layoutX="210.0" layoutY="31.0" text="PROGRAM ENTROLLMENT " textFill="BROWN">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font>
+      </Label>
+      <Line endX="465.0" layoutX="163.0" layoutY="86.0" startX="-150.5" />
+      <Label layoutX="267.0" layoutY="58.0" text="The Culinary Acedemy" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="129.0" text="Program Id :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProgramId" layoutX="127.0" layoutY="118.0" onAction="#cmbProgramIdOnAction" prefHeight="37.0" prefWidth="178.0" />
+      <Label layoutX="21.0" layoutY="191.0" text="Program Name :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDuration" layoutX="462.0" layoutY="192.0" prefHeight="1.0" prefWidth="78.0" text="LBL " textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="192.0" text="Duration :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProgramName" layoutX="131.0" layoutY="192.0" prefHeight="1.0" prefWidth="78.0" text="LBL " textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="251.0" text="Program Fee :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProramFee" layoutX="130.0" layoutY="252.0" prefHeight="1.0" prefWidth="78.0" text="LBL " textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="384.0" layoutY="352.0" onAction="#btncourseEnrollOnAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: green;" text="Enroll" textFill="#f8f8f5">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="497.0" layoutY="351.0" onAction="#btnCourseDiscardOnAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: red;" text="Discard" textFill="#f8f8f5">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="365.0" layoutY="129.0" text="Date :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEnrollDate" layoutX="462.0" layoutY="129.0" prefHeight="1.0" prefWidth="78.0" text="LBL " textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="307.0" text="Deposite Amount :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDepositeAmount" layoutX="156.0" layoutY="303.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label layoutX="22.0" layoutY="360.0" text="Remaining Amount :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRemaining" layoutX="156.0" layoutY="361.0" prefHeight="1.0" prefWidth="78.0" text="LBL " textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

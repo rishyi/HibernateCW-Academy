@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="720.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.EnrollmentController">
+    <children>
+        <Label layoutX="38.0" layoutY="24.0" text="Student Registration " textFill="#17202a">
+            <font>
+                <Font name="Arial Bold" size="23.0" />
+            </font>
+        </Label>
+        <Line endX="1001.5" endY="-16.0" layoutX="101.0" layoutY="74.0" startX="-101.0" startY="-10.0" />
+        <ImageView fitHeight="53.0" fitWidth="59.0" layoutX="1022.0" layoutY="4.0">
+            <image>
+                <Image url="@../icons/icons8-user-100.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="28.0" layoutY="116.0" text="Registration Id :" textFill="#17202a">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="170.0" text="Student Id :" textFill="#17202a">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="633.0" layoutY="175.0" text="Course Ids :" textFill="#17202a">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="572.0" text="Total Payment :" textFill="#17202a">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtDownpayment" layoutX="143.0" layoutY="608.0" onAction="#txtPaymentCalOnAction" prefHeight="43.0" prefWidth="247.0" />
+        <TableView fx:id="tblRegistration" layoutX="28.0" layoutY="306.0" prefHeight="215.0" prefWidth="808.0">
+            <columns>
+                <TableColumn fx:id="colRegId" prefWidth="97.0" text="Regestration Id" />
+                <TableColumn fx:id="colStudentId" prefWidth="96.0" text="Student Id" />
+                <TableColumn fx:id="colStudentName" prefWidth="116.00001525878906" text="Student Name" />
+                <TableColumn fx:id="colCourseIds" prefWidth="95.0" text="Course Id" />
+            <TableColumn fx:id="colCourseName" prefWidth="141.0" text="Course Name" />
+            <TableColumn fx:id="colFee" prefWidth="92.0" text="Course Fee" />
+            <TableColumn fx:id="colRegDate" prefWidth="85.0" text="REG Date" />
+            <TableColumn fx:id="colAction" prefWidth="85.0" text="Action" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="845.0" layoutY="306.0" onAction="#btnAddToTableOnAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: GREEN;" text="   ADD" textFill="#f8f8f5">
+            <font>
+                <Font name="Arial Bold" size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="957.0" layoutY="305.0" onAction="#btnDeleteOnAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: RED;" text="    DISCARD" textFill="#f8f8f6">
+            <font>
+                <Font name="Arial Bold" size="10.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <ImageView fitHeight="43.0" fitWidth="16.0" layoutX="864.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-update-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="967.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/icons8-delete-30.png" />
+            </image>
+        </ImageView>
+      <Label fx:id="lblRegesterId" layoutX="158.0" layoutY="116.0" text="Auto" textFill="#090575">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="116.0" text="Register Date :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="231.0" text="Student Name :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStudentName" layoutX="159.0" layoutY="231.0" text="Auto" textFill="#090575">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCourses" layoutX="815.0" layoutY="162.0" onAction="#cmbCourseIdsOnAction" prefHeight="43.0" prefWidth="247.0" />
+      <Label layoutX="28.0" layoutY="620.0" text="DownPayment :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalPayment" layoutX="144.0" layoutY="571.0" text="Auto" textFill="#090575">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="667.0" text="Balance :" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBalance" layoutX="143.0" layoutY="666.0" text="Auto" textFill="#ee0d09">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStudentId" layoutX="159.0" layoutY="162.0" onAction="#txtStudentDetailOnAction" prefHeight="43.0" prefWidth="247.0" />
+      <DatePicker fx:id="dateRegister" layoutX="812.0" layoutY="99.0" prefHeight="43.0" prefWidth="247.0" />
+      <JFXButton buttonType="RAISED" layoutX="510.0" layoutY="603.0" onAction="#btnRegisterOnAction" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: BROWN;" text="REGESTER" textFill="#f8f8f5">
+         <font>
+            <Font name="Arial Bold" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="377.0" layoutY="232.0" text="Course Name:" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="633.0" layoutY="232.0" text="Course Fee:" textFill="#17202a">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCourseName" layoutX="487.0" layoutY="232.0" text="Auto" textFill="#090575">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCourseFee" layoutX="815.0" layoutY="232.0" text="Auto" textFill="#090575">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
